@@ -1,0 +1,24 @@
+{
+  "name": "Shivam Sharma",
+  "type": "personal",
+  "bio": "Member of @kubesimplify | Web Developer | Open Source & Cloud & DevOps Enthusiast.",
+  "avatar": "https://github.com/shivam-sharma7.png",
+  "links": [
+    {
+      "name": "Follow me on Twitter",
+      "url": "https://twitter.com/shivamstwt1",
+      "icon": "Twitter"
+    },
+    {
+      "name": "Here's my GitHub",
+      "url": "https://github.com/shivam-sharma7",
+      "icon": "Github"
+    },
+
+    {
+      "name": "Blog's",
+      "url": "https://shivam-sharma.hashnode.dev/",
+      "icon": "Link"
+    }
+  ]
+}
