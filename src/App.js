@@ -1,17 +1,15 @@
 import "./App.css";
 import Header from "./components/Header/Index";
 import Footer from "./components/Footer/Index";
-import Home from "./views/Home/Index";
 import { UserDataProvider } from "./context/UserData";
+import Pages from "./routes/Index";
 
 function App() {
   return (
     <UserDataProvider>
-      <div className="app">
-        <Header />
-        <Home />
-        <Footer />
-      </div>
+      <Header />
+      <Pages />
+      <Footer />
     </UserDataProvider>
   );
 }

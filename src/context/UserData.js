@@ -44,7 +44,7 @@ export function UserDataProvider({ children }) {
       const result = fuse.search(`^='${searchTerm}`);
       console.log("result", result);
       setResults(result);
-      // console.log(users);
+      setSearchTerm("");
       return;
     }
     setSearchTerm(e.target.value);

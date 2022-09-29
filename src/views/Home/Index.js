@@ -2,9 +2,11 @@ import React from "react";
 import style from "./index.module.css";
 import { useContext } from "react";
 import { UserDataContext } from "../../context/UserData";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const { searchTerm, results, handleQuery } = useContext(UserDataContext);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -30,7 +32,11 @@ function Home() {
 
       <div className={style.main__user_container}>
         {results?.map((user, index) => (
-          <div className={style.user__container} key={index}>
+          <div
+            className={style.user__container}
+            key={index}
+            onClick={() => navigate(`/${user.item.username}`)}
+          >
             <div className={style.user__card}>
               <div className={style.user__top}>
                 <img
